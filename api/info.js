@@ -9,9 +9,9 @@ module.exports = (req, res) => {
         valor_financiado: 12000.0,
         valor_parcela: 500.0,
         quantidade_parcelas: 24,
-        data_vencimento_proxima_parcela: "2025-10-15",
-        data_pagamento_ultima_parcela: "2025-09-15",
-        status: "Ativo",
+        data_vencimento_proxima_parcela: "2025-09-10",
+        data_pagamento_ultima_parcela: null,
+        status: "Em atraso",
         ticket: 101,
         descricao_ticket:
           "Como eu pago o Crédito do Trabalhador se estou afastado do meu emprego?",
@@ -26,7 +26,7 @@ module.exports = (req, res) => {
         quantidade_parcelas: 12,
         data_vencimento_proxima_parcela: "2025-09-20",
         data_pagamento_ultima_parcela: "2025-09-10",
-        status: "Em reembolso",
+        status: "Ativo",
         ticket: 102,
         descricao_ticket:
           "Qual é o prazo para receber o reembolso de um pagamento duplicado do Crédito do Trabalhador?",
@@ -41,7 +41,7 @@ module.exports = (req, res) => {
         quantidade_parcelas: 12,
         data_vencimento_proxima_parcela: "2025-09-30",
         data_pagamento_ultima_parcela: "2025-09-01",
-        status: "Conciliação pendente",
+        status: "Ativo",
         ticket: 103,
         descricao_ticket:
           "Por que o desconto da parcela do Crédito do Trabalhador apareceu no meu salário e também na minha conta PicPay?",
@@ -56,7 +56,7 @@ module.exports = (req, res) => {
         quantidade_parcelas: 24,
         data_vencimento_proxima_parcela: "2025-09-25",
         data_pagamento_ultima_parcela: "2025-09-05",
-        status: "Divergência de dados",
+        status: "Ativo",
         ticket: 104,
         descricao_ticket:
           "Por que as informações do meu Crédito do Trabalhador são diferentes entre o PicPay e o app da Carteira de Trabalho Digital?",
@@ -71,7 +71,7 @@ module.exports = (req, res) => {
         quantidade_parcelas: 12,
         data_vencimento_proxima_parcela: "2025-10-12",
         data_pagamento_ultima_parcela: "2025-09-12",
-        status: "Solicitação de antecipação",
+        status: "Ativo",
         ticket: 105,
         descricao_ticket: "Como antecipar parcelas do Crédito do Trabalhador?",
       },
@@ -83,9 +83,9 @@ module.exports = (req, res) => {
         valor_financiado: 9000.0,
         valor_parcela: 750.0,
         quantidade_parcelas: 12,
-        data_vencimento_proxima_parcela: "2025-09-28",
+        data_vencimento_proxima_parcela: "2025-09-10",
         data_pagamento_ultima_parcela: "2025-08-28",
-        status: "Solicitação em análise",
+        status: "Em atraso",
         ticket: 106,
         descricao_ticket:
           "Caso meu contrato de trabalho seja encerrado é possível antecipar as parcelas do Crédito do Trabalhador?",
@@ -100,7 +100,7 @@ module.exports = (req, res) => {
         quantidade_parcelas: 12,
         data_vencimento_proxima_parcela: "2025-09-15",
         data_pagamento_ultima_parcela: null,
-        status: "Parcela em atraso",
+        status: "Em atraso",
         ticket: 107,
         descricao_ticket:
           "Por que a minha parcela do Crédito do Trabalhador aparece em atraso?",
@@ -115,7 +115,7 @@ module.exports = (req, res) => {
         quantidade_parcelas: 12,
         data_vencimento_proxima_parcela: "2025-09-20",
         data_pagamento_ultima_parcela: "2025-08-20",
-        status: "Conciliação após quitação",
+        status: "Quitado",
         ticket: 108,
         descricao_ticket:
           "Por que tive desconto em salário ou débito em conta mesmo depois de antecipar, pagar uma parcela ou quitar todo meu contrato de Crédito do Trabalhador?",
