@@ -10,7 +10,8 @@ module.exports = (req, res) => {
         quantidade_parcelas: 24,
         data_vencimento_proxima_parcela: "2025-10-15",
         data_pagamento_ultima_parcela: "2025-09-15",
-        status: "Ativo"
+        status: "Ativo",
+        ticket: 123
       },
       {
         cpf: "987.654.321-00",
@@ -21,7 +22,8 @@ module.exports = (req, res) => {
         quantidade_parcelas: 12,
         data_vencimento_proxima_parcela: "2025-09-10",
         data_pagamento_ultima_parcela: null,
-        status: "Atrasado"
+        status: "Atrasado",
+        ticket: 456
       },
       {
         cpf: "321.654.987-22",
@@ -32,7 +34,9 @@ module.exports = (req, res) => {
         quantidade_parcelas: 18,
         data_vencimento_proxima_parcela: "2025-10-01",
         data_pagamento_ultima_parcela: "2025-09-01",
-        status: "Última Parcela"
+        status: "Última Parcela",
+        ticket: 789
+
       }
     ]
   });
